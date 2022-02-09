@@ -15,7 +15,7 @@ const makeSut = (): SutTypes => {
     }
   }
   const emailValidatorStub = new EmailValidatorStub()
-  const sut = new SignUpController(emailValidator)
+  const sut = new SignUpController(emailValidatorStub)
   return {
     sut,
     emailValidatorStub
